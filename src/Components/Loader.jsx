@@ -19,7 +19,7 @@ function Loader() {
             width="335.05333862304684"
             height="41.896215246253306"
             viewBox="0 0 287.899995728334 36"
-            className="looka-1j8o68f md:w-44 lg:w-60"
+            className="looka-1j8o68f w-36 md:w-44 lg:w-60"
           >
             <defs id="SvgjsDefs4683"></defs>
             <g

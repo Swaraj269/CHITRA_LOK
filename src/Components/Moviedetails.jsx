@@ -31,7 +31,7 @@ function Moviedetails() {
   var navigate = useNavigate();
   var { pathname } = useLocation();
   return value ? (
-    <div className="h-[150vh] w-full relative bg-[#101010]">
+    <div className="h-[180vh] sm:h-[150vh] w-full relative bg-[#101010]">
       <Outlet />
       <div className="backgroundimg h-full w-full">
         <img

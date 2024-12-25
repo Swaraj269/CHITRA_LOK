@@ -18,9 +18,9 @@ function Headers({ data, trend, func }) {
             alt=""
           />
         </div>
-        <div className="overlayimg p-12 h-full w-full flex items-end absolute top-0 left-0">
+        <div className="overlayimg p-7 lg:p-12 h-full w-full flex items-end absolute top-0 left-0">
           <div className="infopart h-full w-full flex flex-col justify-end ">
-            <h1 className="text-white w-[95%] md:w-[80%] lg:w-[40%] leading-[1] text-7xl font-[bold]">
+            <h1 className="text-white w-[95%] md:w-[80%] lg:w-[40%] leading-[1] text-5xl md:text-7xl font-[bold]">
               {data.name ||
                 data.original_title ||
                 data.title ||

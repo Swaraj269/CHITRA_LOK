@@ -31,7 +31,7 @@ function Tvdetails() {
   var navigate = useNavigate();
   var { pathname } = useLocation();
   return value ? (
-    <div className="h-[190vh] w-full relative bg-[#101010]">
+    <div className="h-[210vh] sm:h-[190vh] w-full relative bg-[#101010]">
       <Outlet />
       <div className="backgroundimg h-full w-full">
         <img
