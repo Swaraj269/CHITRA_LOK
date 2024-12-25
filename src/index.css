@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  primary-color  #012fed */
+
+@font-face {
+  font-family: "light";
+  src: url(./assets/Fonts/Satoshi-Light.woff2);
+}
+@font-face {
+  font-family: "medium";
+  src: url(./assets/Fonts/Satoshi-Medium.woff2);
+}
+@font-face {
+  font-family: "regular";
+  src: url(./assets/Fonts/Satoshi-Regular.woff2);
+}
+@font-face {
+  font-family: "bold";
+  src: url(./assets/Fonts/Satoshi-Bold.woff2);
+}
+
+* {
+  font-family: "regular";
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #808080;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #012fed;
+}
+
+.overlayimg,
+.backgroundimg {
+  background: rgb(16, 16, 16);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 16, 16, 0.2) 10%,
+    rgba(16, 16, 16, 0.4) 100%
+  );
+  background: rgb(16, 16, 16);
+  background: radial-gradient(
+    circle,
+    rgba(16, 16, 16, 0.1) 10%,
+    rgba(16, 16, 16, 0.8) 100%
+  );
+}
+.select-dropdown,
+.select-dropdown * {
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  box-sizing: border-box;
+}
+.select-dropdown {
+  position: relative;
+  background-color: #012fed;
+  border-radius: 4px;
+  padding: 0 0.7vw;
+  padding-right: 1.5vw;
+  cursor: pointer;
+}
+.select-dropdown select {
+  font-size: 1rem;
+  font-weight: normal;
+  max-width: 100%;
+  padding: 8px 24px 8px 10px;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.select-dropdown select:active,
+.select-dropdown select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.select-dropdown:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  border-top: 5px solid white;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
